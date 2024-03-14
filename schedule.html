@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta name = "viewport" content = "width=device-width, initial scale = 1" />
+
+
+    <link href='https://fonts.googleapis.com/css?family=Saira' rel='stylesheet'>
+    <link rel="stylesheet" href="schedule.css"> 
+    <link rel="javascript" href="schedule.js">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2> Work Session </h2>
+                
+                <div class = "task" id = "task"></div><br>
+                <div><div class = "description" id = "description"></div> </div>
+                
+               
+                    <h3 class= "popupTimer" id="popupTimer">
+                        
+                        <div class = "timerMinutes" id = "minutes">15</div><div class="popupSeperator">:</div>
+                        <div class = "timerSeconds" id="seconds">00</div>
+                    </h3>
+                <br>
+                    
+            
+                
+                <div> 
+                    <button class = "beginTimer" id = "beginTimer">Start</button>
+                   
+                    <button class = "endEarly" id = "finishEarly" onclick = "FinishPopup()">Task Done</button>
+                    <br><br>
+                    <button class = "cancel" onclick = "location.href = 'home.html';" >End Work Session</button> &nbsp;
+                   
+                    
+                </div>
+               
+        </div>
+        <div class ="popupBg" id="popupBg" > </div>
+        <div class = "popupFinish" id="popupFinish" >
+            <div class = "finishContents"> Are you sure you finished the task?</div>
+            <div class = "small"> (This task will be deleted)</div>
+            <div style = "position: relative; left: -8px;">______________________</div>
+            <button class= "cancelFinish" onclick ="FinishPopup()"><b>No</b></button>
+            <button class= "confirmFinish"onclick = "finishTask()">Yes</button>
+                
+        </div>
+         
+
+        <div class ="popupBg" id="popupBg" > </div>
+        <div class = "popupFinish" id="popupFinish" >
+            <div class = "finishContents"> Are you sure you finished the task?</div>
+            <div class = "small"> (This task will be deleted)</div>
+            <div style = "position: relative; left: -8px;">______________________</div>
+            <button class= "cancelFinish" onclick ="FinishPopup()"><b>No</b></button>
+            <button class= "confirmFinish"onclick = "finishTask()">Yes</button>
+                
+        </div>
+        
+      
+    </div>
+    
+    <script src="schedule.js"> </script>
+</body>
+</html>

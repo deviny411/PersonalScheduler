@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta name = "viewport" content = "width=device-width, initial scale = 1" />
+
+
+    <title>Add Task</title>
+    <link rel="stylesheet" href="addThing.css"> 
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class ="addItem">
+            <h1 id="taskName"> Title</h1>
+            <br>
+            <h2>Time Required</h2>
+            <br>
+            <div class= "time">
+            <input type="text" id="hours-box" placeholder="Hours"> 
+            <input type="text" id="minutes-box" placeholder="Minutes">
+            </div>
+            <h2> Due Date</h2> <br>
+            <div>
+                <input type = "date" id = "dateInput">
+              
+            </div>
+            <h2>Description</h2><br>
+            <div>
+               <textarea id = "textbox" placeholder="Type a description of the task"></textarea>
+               
+            </div>  
+            
+            <div>
+                <button onclick="setTime()">Save</button>
+            </div>
+        </div>
+        
+    </div>  
+    
+    <script src="addThing.js"> </script>
+</body>
+</html>

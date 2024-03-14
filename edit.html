@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta name = "viewport" content = "width=device-width, initial scale = 1" />
+
+
+    <link href='https://fonts.googleapis.com/css?family=Saira' rel='stylesheet'>
+    <link rel="stylesheet" href="edit.css"> 
+    <link rel="javascript" href="edit.js">
+</head>
+<body>
+    <div class="container">
+        <br>        <br>
+        <div class ="todo-app">
+            <h1 id="taskName"> Title</h1>
+            <br>
+            <div> Time Left:
+            
+            <div class= "hours" id = "hoursDisplay">03</div>
+            <div class = "timeUnit" >hrs&nbsp</div>
+            <div class="minutes" id = "minutesDisplay">04</div>
+            <div class = "timeUnit" >mins</div>
+            </div>
+            <br>
+            <div>Due Date: <div class = "dueD" id ="dueDate"></div></div>
+            <br>
+            <div>Description:</div> <div id ="description">OSADNOINDWOANIOSd</div>
+            <br>
+            <div>
+                <button class = "cancel" onclick = "location.href = 'home.html';" >Back</button> &nbsp;
+                <button class = "timer" onclick = "openPopup()">Timer</button>
+                <button class = "deleteTask" onclick="deleteTask()">Delete Task</button>
+            </div>
+           
+          
+        </div>
+        <div class = "popup" id="popup">
+            <h2 class= "popupTimer" id="popupTimer">
+                <div class = "popupHours" id = "hours">20</div><div class="popupSeperator">:</div>
+                <div class = "popupMinutes" id = "minutes">15</div><div class="popupSeperator">:</div>
+                <div class = "popupSeconds" id="seconds">00</div>
+            </h2>
+        
+            <button class = "beginTimer" id = "beginTimer">Start</button>
+            <button class = "closeTimer" onclick="closePopup()">Close</button>
+        </div>
+    </div>  
+    
+    <script src="edit.js"> </script>
+</body>
+</html>

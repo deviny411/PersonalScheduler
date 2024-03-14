@@ -1,0 +1,169 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.container{
+
+    width:100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg, #282828, #131313);
+    padding:10px;
+
+}
+
+.todo-app{
+    font-family: 'Saira', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    margin:100px auto 20px;
+    
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+
+input{
+    margin-left: 5%;
+    position:relative;
+    border-radius: 30px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+    flex:1;
+    border: none;
+    outline:none;
+    background: #edeef0;
+    
+    padding:10px;
+}
+
+.hours, 
+.minutes,
+.timeUnit{
+    font-size: 25px;
+    border-radius: 30px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+    display:inline;
+    font-weight: bold;
+}
+button{
+    border:none;
+    outline: none;
+    padding: 16px 30px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px; 
+}
+
+.cancel{
+    background:  #6c6c6c;
+}
+
+.deleteTask{
+    background:#960f00;
+    position: absolute;
+    left: 60%;
+    padding: 16px 25px;
+}
+
+.popup{
+  
+    width: 600px;
+    height: 450px;
+    background:#b3b3b3;
+    border-radius: 20px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align:center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 40%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popupTimer{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    margin:25% auto;
+
+    width:100%;
+    max-width:500px;
+    height: 35%;
+    top:40%;
+    background-color:#fff;
+    border-radius:20px;
+
+    color:#000000;
+    font-size:80px;
+    font-weight:700;
+
+    font-family:'Saira', sans-serif;
+}
+
+.popupHours, 
+.popupMinutes,
+.popupSeconds{
+ 
+    font-family:'Saira', sans-serif;
+
+ font-size:80px;
+ 
+ width:200%;
+ text-align:center;
+
+
+}
+/* 
+.popupSeperator{
+
+} */
+
+.beginTimer{
+    background: #ff5945;
+    font-family:'Saira', sans-serif;
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    padding: 20px 40px;
+    width:22%;
+    
+    font-size: 25px;
+}
+.beginTimer.clicked{
+    width:22%;
+    background-color:#bd1300;
+}
+.closeTimer{
+    font-family:'Saira', sans-serif;
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    padding: 20px 40px;
+    font-size: 25px;
+}
+
+.dueD{
+    font-size: 25px;
+    border-radius: 30px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+    display:inline;
+    font-weight: bold;
+
+}
